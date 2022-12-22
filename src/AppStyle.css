@@ -1,0 +1,73 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #9bb7d4;
+}
+main {
+  text-align: center;
+}
+button,
+input {
+  margin: 13px;
+}
+.inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+input {
+  color: rgba(104, 104, 104, 0.874);
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid #96afaf;
+  border-radius: 4px;
+  height: 35px;
+  text-align: center;
+  outline: none;
+  box-shadow: 6px 5px #888888;
+}
+input:hover {
+  border-bottom-color: #4a6472;
+  box-shadow: 6px 5px #4a6472;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.5s;
+  border: 1px solid transparent;
+  letter-spacing: 1px;
+  width: 160px;
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+  height: 48px;
+}
+button:hover {
+  color: #fff;
+  background-color: #616467;
+}
+
+.choose {
+  border: 2px solid black;
+  box-shadow: -5px 5px 0 black, 5px -5px 0 white;
+  transition: 350ms ease-in-out;
+}
+.choose:hover {
+  box-shadow: 10px 5px 0 white, -10px -5px 0 black;
+}
+h1 {
+  color: #fad25a;
+}
+@media only screen and (max-width: 600px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
