@@ -38,6 +38,11 @@ export default function Main() {
       function random_item(items) {
         return items[Math.floor(Math.random() * items.length)];
       }
+      for (let i = 0; i < input.length; i++) {
+        // for loop to clear all inputs after choising
+        var a = input[i];
+        a.value = "";
+      }
       setFinalChoice(random_item(filtered));
     }
   }
